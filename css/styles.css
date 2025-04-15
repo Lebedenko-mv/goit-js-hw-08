@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+}
+
+.gallery li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;  
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: red;
+    width:360px;
+    height: 200px;
+    
+}
+
+ 
+li:hover img {
+    transform: scale(1.0444, 1.04);
+    transition: transform 0.3s ease;
+  }
+  
